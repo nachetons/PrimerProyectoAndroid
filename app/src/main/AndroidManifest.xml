@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tema3.tema3ejemplo1">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.tema3.Activities.AboutActivity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.tema3.Activities.Web1Activity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.tema3.Activities.Web2Activity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.tema3.Activities.Web3Activity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.tema3.Activities.Web4Activity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.tema3.Activities.ThirdActivity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+
+        <activity android:name="com.tema3.Activities.SecondActivity" android:parentActivityName="com.tema3.Activities.MainActivity">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.tema3.Activities.MainActivity"/>
+        </activity>
+        <activity android:name="com.tema3.Activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/koala"
+    android:layout_height="match_parent"
+    tools:context="com.tema3.Activities.ThirdActivity">
+
+    <Button
+        android:id="@+id/BotonShare"
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="45dp"
+        android:background="#2196F3"
+        android:text="Share"
+        android:textColor="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BotonMostrar"
+        android:layout_width="380dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Mostrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BotonOcultar"
+        android:layout_width="137dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="42dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Ocultar"
+        app:layout_constraintBottom_toTopOf="@+id/BotonShare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.945"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/Exitp"
+        android:layout_width="137dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="42dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="SALIR"
+        app:layout_constraintBottom_toTopOf="@+id/BotonShare"
+        app:layout_constraintEnd_toStartOf="@+id/BotonOcultar"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/acerca"
+        android:layout_width="380dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="120dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonMostrar" />
+
+    <Button
+        android:id="@+id/Exit"
+        android:layout_width="380dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="70dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Cerrar Aplicacion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonMostrar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/koala"
+    android:layout_height="match_parent"
+    tools:context="com.tema3.Activities.AboutActivity">
+
+    <TextView
+        android:id="@+id/acerca2"
+        android:layout_width="362dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="72dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acerca" />
+
+    <TextView
+        android:id="@+id/acerca"
+        android:layout_width="380dp"
+        android:layout_height="98dp"
+        android:layout_marginTop="110dp"
+        android:textAlignment="center"
+        android:textSize="21sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFacebook"
+        android:onClick="web1"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/facebook"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonTwitter"
+        android:onClick="web2"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/twitter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonFacebook" />
+
+    <Button
+        android:id="@+id/buttonWhatsapp"
+        android:layout_width="70dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="web3"
+        android:background="@drawable/whatsapp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonInstagram"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toEndOf="@+id/buttonTwitter" />
+
+    <Button
+        android:id="@+id/buttonInstagram"
+        android:layout_width="70dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="72dp"
+        android:onClick="web4"
+        android:background="@drawable/instagram"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
